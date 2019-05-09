@@ -1,0 +1,369 @@
+.home-page {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-menu {
+    height: 52px;
+    background: linear-gradient(to right, #099759, #2bb277);
+    padding: 5px 40px 5px 40px;
+    border-radius: 10px;
+}
+
+.left-top-menu {
+    float: left;
+}
+
+.page-logo {
+    float: left;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #04ce76;
+}
+
+    .page-logo i {
+        font-size: 30px;
+        color: white;
+    }
+
+        .page-logo i:hover {
+            color: #ff2121;
+        }
+
+.search-box {
+    padding: 10px;
+    display: inline-block;
+    border-radius: 50px;
+    background-color: #04ce76;
+}
+
+.text-input {
+    border: none;
+    font-size: 18px;
+    width: 250px;
+    color: white;
+    background-color: #04ce76;
+}
+
+.search-btn {
+    width: 21px;
+    height: 21px;
+    border: none;
+    background-color: #04ce76;
+    cursor: pointer;
+}
+
+    .search-btn i {
+        font-size: 18px;
+        color: #d1d1d1;
+    }
+
+        .search-btn i:hover {
+            color: white;
+        }
+
+.right-top-menu {
+    float: right;
+}
+
+.root-menu {
+    padding: 10px;
+    height: 42px;
+}
+
+    .root-menu li {
+        list-style-type: none;
+        display: inline-block;
+        height: 22px;
+    }
+
+        .root-menu li a {
+            font-size: 18px;
+            color: #d1d1d1;
+            /*margin-right: 40px;*/
+        }
+
+            .root-menu li a i {
+                margin-left: 8px;
+            }
+
+            .root-menu li a:hover {
+                color: white;
+            }
+
+.category-title {
+    padding: 5px;
+}
+
+.category-list {
+    position: absolute;
+    top: 40px;
+    right: 420px;
+    background-color: #099759;
+    box-shadow: 4px 4px 2px 2px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 5px;
+    z-index: 99;
+    display: none;
+}
+
+.category:hover .category-list {
+    display: block;
+}
+
+.category-list a {
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    font-size: 18px;
+    color: #d1d1d1;
+}
+
+.category-list a:hover {
+    color: white;
+}
+
+.profile {
+  
+}
+
+.avatar {
+    height: 21px;
+    width: 21px;
+    float: left;
+}
+
+.user-name {
+    margin-left: 5px;
+}
+
+.user-list-options {
+    position: absolute;
+    top: 37px;
+    right: 30px;
+    background-color: #099759;
+    box-shadow: 4px 4px 2px 2px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 5px;
+    z-index: 99;
+    display: none;
+}
+
+.user-list-options a {
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    font-size: 18px;
+    color: #d1d1d1;
+}
+
+.profile:hover .user-list-options {
+    display: block;
+}
+
+.mr-40 {
+    margin-right: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body-page {
+    height: 580px;
+    border-radius: 5px;
+    /*background-color: #2bb277;*/
+    box-shadow: 4px 4px 6px 8px rgba(0,0,0,0.2);
+    margin: 10px 5px 10px 5px;
+    padding: 10px;
+    color: #4b4949;
+}
+
+.page-slogan {
+    height: 80px;
+    margin-top: 5px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 29px;
+    background-color: #2bb277;
+}
+
+    .page-slogan p {
+        color: white;
+        font-size: 19px;
+        /*font-family: 'Comic Sans MS';*/
+    }
+
+.hot-book-title i {
+    margin-right: 10px;
+    color: #099759;
+}
+
+.hot-book-title a {
+    font-size: 24px;
+    color: #4b4949;
+    margin-left: 70px;
+}
+
+    .hot-book-title a:hover {
+        color: #2bb277;
+    }
+
+.hot-book-content {
+    padding: 20px 67px 20px 67px;
+}
+
+    .hot-book-content img {
+        width: 120px;
+        height: 176px;
+        box-shadow: 1px 1px 3px 2px rgba(0,0,0,0.2);
+    }
+
+.card-book {
+    width: 260px;
+    height: 238px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+    .card-book:hover {
+        border: 1px solid #099759;
+    }
+
+.book-image {
+    float: left;
+}
+
+.book-info {
+    float: right;
+    height: 176px;
+    width: 118px;
+    padding: 20px 0px 5px 10px;
+    text-align: left;
+}
+
+    .book-info p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .book-info .book-name {
+        height: 55px;
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+
+    .book-info .book-author {
+        height: 30px;
+        font-size: 12px;
+    }
+
+.card-book-options {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    height: 23px;
+}
+
+.card-book:hover .card-book-options {
+    display: block;
+}
+
+.card-book-options div {
+    height: 23px;
+    width: 80px;
+    padding-top: 3px;
+    border-radius: 3px;
+    background-color: #099759;
+    text-align: center;
+}
+
+.read-link {
+    float: left;
+    margin-right: 15px;
+}
+
+.detail-link {
+    float: right;
+}
+
+.card-book-options div a {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.footer-page {
+    height: 150px;
+}
+
+.footer-page {
+    color: #4b4949;
+    padding: 20px 40px 20px 40px;
+}
+
+.footer-left {
+    float: left;
+}
+
+    .footer-left .footer-left-top {
+        margin-bottom: 15px;
+    }
+
+        .footer-left .footer-left-top p {
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+
+.footer-right {
+    float: right;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 0.8;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    -webkit-font-smoothing: antialiased;
+}
+
+.none-shadow-border:active,
+.none-shadow-border:focus,
+.none-shadow-border.active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+input[type=text]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type=text]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
