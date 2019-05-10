@@ -22,7 +22,7 @@
                             <a href="category?c=4&n=Kiếm hiệp">Kiếm hiệp</a>
                             <a href="category?c=5&n=Ngôn tình">Ngôn tình</a>
                             <a href="category?c=6&n=Khoa học">Khoa học</a>
-                            <a href="category?c=7&n=Nhật kí">Nhật kí</a>
+                            <a href="category?c=7&n=Nhật kí">Hồi ký - Tùy bút</a>
                         </nav>
                     </li>
                     <li><a href="${pageContext.request.contextPath}/store" class="mr-40">Cửa hàng sách<i class="fas fa-store"></i></a></li>

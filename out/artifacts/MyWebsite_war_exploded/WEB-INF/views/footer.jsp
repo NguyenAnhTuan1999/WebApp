@@ -6,11 +6,12 @@
             <p>Thông tin liên hệ</p>
         </div>
         <div>
-            <p>Nguyễn Anh Tuấn</p>
+            <p>Nhóm 7</p>
+            <p>Môn: Công nghệ phần mềm</p>
             <p>Đại học Công nghệ - ĐHQGHN</p>
         </div>
     </div>
     <div class="footer-right">
-        <p>Copyright</p>
+        <p>Copyright © 2019 My Website</p>
     </div>
 </footer>

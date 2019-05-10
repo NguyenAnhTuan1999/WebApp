@@ -75,73 +75,14 @@ public class LoginServlet extends HttpServlet {
 
             response.sendRedirect(currentUrl);
             System.out.println(currentUrl);
-            //System.out.println(request.getSession().getAttribute("currentUrl").toString());
-            //response.sendRedirect(session.getAttribute("currentUrl").toString());
-            //this.getServletContext().getRequestDispatcher("/WEB-INF/views/homeView.jsp").forward(request, response);
+
         }
         else {
             String mes = "Tài khoản truy cập không hợp lệ";
             request.setAttribute("notif", mes + "<script>$(\"#myModal\").css(\"display\", \"block\");</script>");
             this.getServletContext().getRequestDispatcher(currentServlet).forward(request, response);
         }
-        
-//        String mes = "";
-//        boolean loginErr = false;
-//        if(userName.isEmpty() && pass.isEmpty()) {
-//            loginErr = true;
-//            mes = "Vui lòng điền đầy đủ tên đăng nhập và mật khẩu";
-//        }
-//        else {
-//            if(userName.isEmpty()) {
-//                loginErr = true;
-//                mes = "Vui lòng điền tên đăng nhập";
-//            }
-//            if(pass.isEmpty()) {
-//                loginErr = true;
-//                mes = "Vui lòng điền mật khẩu";
-//            }
-//        }
-//
-//        UserAccount user = null;
-//        if(!loginErr) {
-//
-//        	Connection conn = MyUtils.getStoredConnection(request);
-//
-//            try {
-//                user = DBUtils.findUser(conn, userName, pass);
-//            } catch (SQLException e) {
-//                e.printStackTrace();
-//            }
-//
-//            if(user != null) {
-//            	// Luu thong tin nguoi dung vao Session
-//                HttpSession session = request.getSession();
-//                MyUtils.storeLoginedUser(session, user);
-//
-//                // Nếu người dùng chọn tính năng "Remember me"
-//                if ("Y".equals(rememberMe)) {
-//                    MyUtils.storeUserCookie(response, user);
-//                }
-//                // Ngược lại xóa Cookie
-//                else {
-//                    MyUtils.deleteUserCookie(response);
-//                }
-//
-//                response.sendRedirect(currentUrl);
-//                //System.out.println(request.getSession().getAttribute("currentUrl").toString());
-//                //response.sendRedirect(session.getAttribute("currentUrl").toString());
-//                //this.getServletContext().getRequestDispatcher("/WEB-INF/views/homeView.jsp").forward(request, response);
-//            }
-//            else {
-//                mes = "Tài khoản truy cập không hợp lệ";
-//                request.setAttribute("notif", mes + "<script>$(\"#loginWindow\").css(\"display\", \"block\");</script>");
-//                this.getServletContext().getRequestDispatcher(currentServlet).forward(request, response);
-//            }
-//        }
-//        else {
-//            request.setAttribute("notif", mes + "<script>$(\"#loginWindow\").css(\"display\", \"block\");</script>");
-//            this.getServletContext().getRequestDispatcher(currentServlet).forward(request, response);
-//        }
+
     }
  
 }
